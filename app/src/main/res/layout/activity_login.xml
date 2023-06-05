@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   android:background="@color/azul">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".Login">
+
     <ImageView
-            android:layout_width="225dp"
-            android:layout_height="225dp" app:srcCompat="@drawable/student_hub_icon" android:id="@+id/imageView2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.048"/>
+        android:layout_width="225dp"
+        android:layout_height="225dp" app:srcCompat="@drawable/student_hub_icon" android:id="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.048"/>
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -21,7 +24,7 @@
         android:inputType="textEmailAddress"
         android:padding="8dp"
         android:text="e-mail"
-        android:textColor="#FFFFFF"
+        android:textColor="#7A7272"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +40,7 @@
         android:inputType="numberPassword"
         android:padding="8dp"
         android:text="Contraseña"
-        android:textColor="#FFFFFF"
+        android:textColor="#7A7272"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,4 +115,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
