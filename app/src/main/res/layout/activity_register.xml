@@ -12,7 +12,7 @@
         tools:context=".Register">
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/etLastName"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -56,7 +56,7 @@
             app:layout_constraintVertical_bias="0.149" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/etName"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -88,7 +88,7 @@
             app:layout_constraintVertical_bias="0.453" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/etDay"
             android:layout_width="55dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -105,7 +105,7 @@
             app:layout_constraintVertical_bias="0.489" />
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/etMonth"
             android:layout_width="79dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -121,8 +121,8 @@
             app:layout_constraintVertical_bias="0.486" />
 
         <EditText
-            android:id="@+id/editTextText6"
-            android:layout_width="60dp"
+            android:id="@+id/etYear"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
             android:ems="10"
@@ -144,19 +144,22 @@
             android:layout_marginStart="72dp"
             android:layout_marginTop="19dp"
             android:layout_marginEnd="72dp"
+            android:layout_marginBottom="15dp"
             android:text="Como te identificas?"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/rgSex"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+            app:layout_constraintTop_toBottomOf="@+id/etLastName" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="275dp"
-            android:layout_height="158dp"
+            android:id="@+id/rgSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="69dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="69dp"
@@ -169,21 +172,21 @@
             app:layout_constraintVertical_bias="0.033">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rbMan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hombre"
                 android:textColor="#FFFFFF" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbWomen"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Mujer"
                 android:textColor="#FFFFFF" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rbOther"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Otro"
@@ -193,7 +196,7 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="354dp"
+            android:layout_width="match_parent"
             android:layout_height="69dp"
             android:text="Como te gustaria llamarte en el Hub?"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -208,7 +211,7 @@
             app:layout_constraintVertical_bias="0.551" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/etUser"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_marginStart="61dp"
@@ -219,7 +222,7 @@
             android:ems="10"
             android:inputType="text"
             android:padding="8dp"
-            android:text="Name"
+            android:text="Usuario"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintEnd_toEndOf="parent"
@@ -244,7 +247,7 @@
             app:layout_constraintVertical_bias="0.655" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress3"
+            android:id="@+id/etCareer"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -261,7 +264,7 @@
             app:layout_constraintVertical_bias="0.698" />
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/etEntryYear"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -278,7 +281,7 @@
             app:layout_constraintVertical_bias="0.792" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/etPasswordCreation"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -292,10 +295,10 @@
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.741" />
+            app:layout_constraintVertical_bias="0.932" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/etEmailCreation"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -312,7 +315,7 @@
             app:layout_constraintVertical_bias="0.888" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress4"
+            android:id="@+id/etCollege"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
@@ -325,8 +328,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3"
-            app:layout_constraintVertical_bias="0.742" />
+            app:layout_constraintTop_toBottomOf="@+id/etCareer"
+            app:layout_constraintVertical_bias="0.032" />
 
         <TextView
             android:id="@+id/textView11"
@@ -341,15 +344,15 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:typeface="monospace"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintBottom_toTopOf="@+id/etEmailCreation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+            app:layout_constraintTop_toBottomOf="@+id/etEntryYear"
             app:layout_constraintVertical_bias="0.0" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button6"
+            android:id="@+id/btnRegister"
             android:layout_width="285dp"
             android:layout_height="55dp"
             android:layout_marginStart="60dp"
@@ -363,7 +366,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordCreation"
             app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
