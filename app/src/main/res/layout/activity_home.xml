@@ -82,7 +82,7 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/text_inputbox"
             android:padding="8dp"
-            android:text="Este es un ejemplo de texto de un post en el blog. Puedes escribir aquí toda la información relevante que desees compartir con los usuarios de tu aplicación."
+            android:text="Este es un ejemplo de texto de un post en el blog."
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
