@@ -8,7 +8,9 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import com.google.firebase.auth.FirebaseAuth
+
 
 class Login : AppCompatActivity() {
     private lateinit var etEmail: EditText
@@ -38,22 +40,21 @@ class Login : AppCompatActivity() {
                         val user = auth.currentUser
                         Toast.makeText(
                             baseContext,
-                            "Authentication successful.",
-                            Toast.LENGTH_SHORT
+                            "Welcome ${user?.email}",
+                            LENGTH_SHORT
                         ).show()
-                        // TODO: Navigate to the next activity or perform other actions
+                        val intent = Intent(this, Home::class.java)
+                        startActivity(intent)
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(
                             baseContext,
-                            "Authentication failed.",
-                            Toast.LENGTH_SHORT
+                            "Incorrect fields",
+                            LENGTH_SHORT
                         ).show()
                     }
                 }
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent)
             }
         }
     }

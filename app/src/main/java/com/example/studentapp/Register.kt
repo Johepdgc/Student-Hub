@@ -7,10 +7,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
-import com.example.studentapp.R.id.etCollege
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -22,7 +20,7 @@ class Register : AppCompatActivity() {
         //VARIABLES
         val etName: EditText = findViewById(R.id.etName)
         val etLastName: EditText = findViewById(R.id.etLastName)
-        var rgSex: RadioGroup = findViewById(R.id.rgSex)
+        val rgSex: RadioGroup = findViewById(R.id.rgSex)
         val etDay: EditText = findViewById(R.id.etDay)
         val etMonth: EditText = findViewById(R.id.etMonth)
         val etYear: EditText = findViewById(R.id.etYear)
@@ -34,30 +32,34 @@ class Register : AppCompatActivity() {
         val etPassword: EditText = findViewById(R.id.etPasswordCreation)
         val btnRegister: Button = findViewById(R.id.btnRegister)
 
-        var auth = FirebaseAuth.getInstance()
+        val auth = FirebaseAuth.getInstance()
 
         btnRegister.setOnClickListener{
-            var name = etName.text.toString()
-            var lastName = etLastName.text.toString()
-            var selectedGenderId = rgSex.checkedRadioButtonId
-            var gender: String = if (selectedGenderId == R.id.rbMan) {
-                "Man"
-            } else if (selectedGenderId == R.id.rbWomen) {
-                "Woman"
-            } else if (selectedGenderId == R.id.rbOther) {
-                "Other"
-            } else {
-                ""
+            val name = etName.text.toString()
+            val lastName = etLastName.text.toString()
+            val gender: String = when (rgSex.checkedRadioButtonId) {
+                R.id.rbMan -> {
+                    "Man"
+                }
+                R.id.rbWomen -> {
+                    "Woman"
+                }
+                R.id.rbOther -> {
+                    "Other"
+                }
+                else -> {
+                    ""
+                }
             }
-            var day = etDay.text.toString()
-            var month = etMonth.text.toString()
-            var year = etYear.text.toString()
-            var user = etUser.text.toString()
-            var career = etCareer.text.toString()
-            var college = etCollege.text.toString()
-            var entryYear = etEntryYear.text.toString()
-            var email = etEmail.text.toString()
-            var password = etPassword.text.toString()
+            val day = etDay.text.toString()
+            val month = etMonth.text.toString()
+            val year = etYear.text.toString()
+            val user = etUser.text.toString()
+            val career = etCareer.text.toString()
+            val college = etCollege.text.toString()
+            val entryYear = etEntryYear.text.toString()
+            val email = etEmail.text.toString()
+            val password = etPassword.text.toString()
 
             if (name.isEmpty() || lastName.isEmpty() || gender.isEmpty() || day.isEmpty() ||
                 month.isEmpty() || year.isEmpty() || user.isEmpty() || career.isEmpty() ||
@@ -73,17 +75,16 @@ class Register : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
                         val user = auth.currentUser
                         Toast.makeText(
                             baseContext,
-                            "Registration successful.",
+                            "Welcome to StudentApp!",
                             Toast.LENGTH_SHORT
                         ).show()
-
+                        val intent = Intent(this, Home::class.java)
+                        startActivity(intent)
                     } else {
-                        // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure", task.exception)
                         Toast.makeText(
                             baseContext,
@@ -113,9 +114,6 @@ class Register : AppCompatActivity() {
             val ref = database.reference
 
             ref.child("users").push().setValue(userData)
-
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent)
         }
     }
 }

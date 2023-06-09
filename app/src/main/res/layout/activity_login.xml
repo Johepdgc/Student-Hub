@@ -28,13 +28,14 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:padding="8dp"
-        android:text="@string/e_mail"
+        android:hint="@string/e_mail"
         android:textColor="#7A7272"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.424"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -42,15 +43,16 @@
         android:layout_height="50dp"
         android:background="@drawable/text_inputbox"
         android:ems="10"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:padding="8dp"
-        android:text="@string/contrase_a"
+        android:hint="@string/contrase_a"
         android:textColor="#7A7272"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintVertical_bias="0.523"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView"

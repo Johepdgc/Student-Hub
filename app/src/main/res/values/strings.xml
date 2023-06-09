@@ -13,4 +13,24 @@
     <string name="facebook">Facebook</string>
     <string name="ingresar">Ingresar</string>
     <string name="descubre_las_ltimas_noticias_y_actualizaciones">Descubre las últimas noticias y actualizaciones</string>
+    <string name="apellido">Apellido</string>
+    <string name="nombre">Nombre</string>
+    <string name="d">D</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="como_te_identificas">Como te identificas?</string>
+    <string name="como_te_gustaria_llamarte_en_el_hub">Como te gustaria llamarte en el Hub?</string>
+    <string name="usuario">Usuario</string>
+    <string name="que_estudias">Que estudias?</string>
+    <string name="carrera">Carrera</string>
+    <string name="aaaa">AAAA</string>
+    <string name="universidad">Universidad</string>
+    <string name="el_hub_te_espera">El Hub te espera!</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="otro">Otro</string>
+    <string name="todo">TODO</string>
+    <string name="cuentanos_un_poco_sobre_ti">Cuentanos un poco sobre ti</string>
+    <string name="student_hub">Student HUB</string>
 </resources>

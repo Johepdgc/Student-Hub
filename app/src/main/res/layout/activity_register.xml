@@ -19,14 +19,15 @@
             android:ems="10"
             android:inputType="text"
             android:padding="8dp"
-            android:text="Apellido"
+            android:hint="@string/apellido"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243" />
+            app:layout_constraintVertical_bias="0.243"
+            android:autofillHints="" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -38,13 +39,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.012"
-            app:srcCompat="@drawable/student_hub_icon" />
+            app:srcCompat="@drawable/student_hub_icon"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cuentanos un poco sobre ti"
+            android:text="@string/cuentanos_un_poco_sobre_ti"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -63,20 +65,21 @@
             android:ems="10"
             android:inputType="text"
             android:padding="8dp"
-            android:text="Nombre"
+            android:hint="@string/nombre"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.191" />
+            app:layout_constraintVertical_bias="0.191"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fecha de nacimiento"
+            android:text="@string/fecha_de_nacimiento"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -93,16 +96,17 @@
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="8dp"
-            android:text="D"
+            android:hint="@string/d"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.193"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.489" />
+            app:layout_constraintVertical_bias="0.489"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etMonth"
@@ -110,15 +114,16 @@
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="8dp"
-            android:text="MM"
+            android:hint="@string/mm"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.486" />
+            app:layout_constraintVertical_bias="0.486"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etYear"
@@ -126,16 +131,17 @@
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="8dp"
-            android:text="YYYY"
+            android:hint="@string/yyyy"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.809"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.487" />
+            app:layout_constraintVertical_bias="0.487"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/textView7"
@@ -145,7 +151,7 @@
             android:layout_marginTop="19dp"
             android:layout_marginEnd="72dp"
             android:layout_marginBottom="15dp"
-            android:text="Como te identificas?"
+            android:text="@string/como_te_identificas"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -173,23 +179,23 @@
 
             <RadioButton
                 android:id="@+id/rbMan"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Hombre"
+                android:text="@string/hombre"
                 android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rbWomen"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="60dp"
-                android:text="Mujer"
+                android:text="@string/mujer"
                 android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rbOther"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Otro"
+                android:text="@string/otro"
                 android:textColor="#FFFFFF" />
 
         </RadioGroup>
@@ -198,7 +204,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="69dp"
-            android:text="Como te gustaria llamarte en el Hub?"
+            android:text="@string/como_te_gustaria_llamarte_en_el_hub"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -222,20 +228,21 @@
             android:ems="10"
             android:inputType="text"
             android:padding="8dp"
-            android:text="Usuario"
+            android:hint="@string/usuario"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Que estudias?"
+            android:text="@string/que_estudias"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -252,16 +259,17 @@
             android:layout_height="50dp"
             android:background="@drawable/text_inputbox"
             android:ems="10"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:padding="8dp"
-            android:text="Carrera"
+            android:hint="@string/carrera"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.698" />
+            app:layout_constraintVertical_bias="0.698"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etEntryYear"
@@ -271,14 +279,15 @@
             android:ems="10"
             android:inputType="date"
             android:padding="8dp"
-            android:text="AAAA"
+            android:hint="@string/aaaa"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.792" />
+            app:layout_constraintVertical_bias="0.792"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etPasswordCreation"
@@ -288,14 +297,15 @@
             android:ems="10"
             android:inputType="textPassword"
             android:padding="8dp"
-            android:text="Contrasena"
+            android:hint="@string/contrase_a"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.932" />
+            app:layout_constraintVertical_bias="0.932"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etEmailCreation"
@@ -305,14 +315,15 @@
             android:ems="10"
             android:inputType="textEmailAddress"
             android:padding="8dp"
-            android:text="e-mail"
+            android:hint="@string/e_mail"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.888" />
+            app:layout_constraintVertical_bias="0.888"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/etCollege"
@@ -322,14 +333,15 @@
             android:ems="10"
             android:inputType="textEmailAddress"
             android:padding="8dp"
-            android:text="Universidad"
+            android:hint="@string/universidad"
             android:textColor="#7A7272"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etCareer"
-            app:layout_constraintVertical_bias="0.032" />
+            app:layout_constraintVertical_bias="0.032"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/textView11"
@@ -339,7 +351,7 @@
             android:layout_marginTop="28dp"
             android:layout_marginEnd="115dp"
             android:layout_marginBottom="28dp"
-            android:text="El Hub te espera!"
+            android:text="@string/el_hub_te_espera"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -360,7 +372,7 @@
             android:layout_marginEnd="66dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/btn_amarillo"
-            android:text="Registrarse"
+            android:text="@string/registrarse"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
